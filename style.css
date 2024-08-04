@@ -290,6 +290,7 @@ html {
     .show-fts {
         font-size: 10px;
         margin-bottom: 10px;
+        inline-size: 35vh;
     }
 
     .more {
