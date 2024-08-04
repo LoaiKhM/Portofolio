@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Gideon+Roman&family=Inter:wght@100..900&family=Kode+Mono:wght@400..700&family=Lora&family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oxygen:wght@300;400;700&family=Pixelify+Sans:wght@700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
-body,html, h1{
-    padding:0;
+
+body,
+html,
+h1 {
+    padding: 0;
     margin: 0;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -8,47 +11,60 @@ body,html, h1{
     font-style: normal;
     color: #4895ef;
 }
-body,html{
+
+body,
+html {
     height: 100%;
-    background-color: #0d1117;
+    background-color: #ffff;
     overflow: hidden;
 }
-.arrow-cont{
+
+.arrow-cont {
     display: flex;
     justify-content: center;
 }
-.hero{
-    height: 100%;   
+
+.hero {
+    height: 100%;
     display: flex;
     flex-direction: column;
-    background-color: #7209b7;
+    background-color: #522258;
 }
-.title,.subtitle{
-    color:white;
+
+.title,
+.subtitle {
+    color: white;
     font-weight: bold;
+    animation: appear 2s linear;
 }
-.title{
+
+.title {
     white-space: nowrap;
     overflow-x: hidden;
     padding-right: 10px;
-    animation: typing 2s steps(50),
-                border 2s linear infinite;
+    animation:typing 2s steps(50),
+        border 2s linear infinite;
 }
-.big-content{
+
+.big-content {
     display: flex;
     flex-grow: 4;
     justify-content: center;
     align-items: center;
     flex-direction: column-reverse;
 }
-.smallcont{
+
+.smallcont {
     padding-left: 10px;
     display: flex;
     flex-direction: row;
     flex-grow: 1;
     justify-content: center;
 }
-.link-github ,.gmail-link,.face-link{
+
+.link-github,
+.gmail-link,
+.face-link {
     color: black;
     text-decoration: none;
     height: min-content;
@@ -57,41 +73,51 @@ body,html{
     letter-spacing: 4px;
     color: white;
 }
-.img-gmail{
+
+.img-gmail {
     height: 24px;
     width: 24px;
 }
-.img-face{
+
+.img-face {
     height: 20px;
     width: 20px;
     margin-left: 3px;
 }
-.hero h3{
+
+.hero h3 {
     font-size: 14px;
     letter-spacing: 3px;
 }
-.welcome{
+
+.welcome {
     animation: move 3s linear infinite;
     height: 300px;
 }
-.github ,.gmail{
+
+.github,
+.gmail {
     display: flex;
     height: min-content;
     margin-top: 10px;
     align-items: center;
 }
-.projex{
-    display: flex ;
+
+.projex {
+    display: flex;
 }
-.content-root,.projex{
+
+.content-root,
+.projex {
     padding-left: 10px;
     height: auto;
-    background-color: #0d1117;
+    background-color: #fff;
     color: white;
     flex-direction: column;
     justify-content: center;
 }
-.projects{
+
+.projects {
     font-size: 30px;
     color: #b5179e;
     margin-left: -35px;
@@ -99,30 +125,35 @@ body,html{
     flex-direction: column;
     flex-grow: 1;
 }
-.projects li{
+
+.projects li {
     display: flex;
     animation: show 3s linear;
     align-items: center;
     margin-top: 15px;
 }
-.projects li:hover{
+
+.projects li:hover {
     text-decoration: underline;
     cursor: pointer;
 }
-.about{
+
+.about {
     color: white;
     letter-spacing: 4px;
     font-size: 36px;
     text-align: center;
     color: #4895ef;
 }
-.coding{
+
+.coding {
     height: 300px;
     width: 300px;
     object-fit: contain;
     margin-right: 10px;
 }
-.coding-section{
+
+.coding-section {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -130,204 +161,266 @@ body,html{
     align-items: center;
 }
 
-.columned{
+.columned {
     display: flex;
     flex-direction: column;
     height: auto;
 }
-.typo{
 
-margin-top: 15px;
+.typo {
 
-animation: show 2s linear;
+    margin-top: 15px;
 
-position: relative;
+    animation: show 2s linear;
 
-font-size: 30px;
+    position: relative;
+
+    font-size: 30px;
 }
-.iam{
+
+.iam {
     color: #b5179e;
 }
-.more{
+
+.more {
     height: 40px;
     margin-left: 10px;
 }
-.show-fts{
+
+.show-fts {
     display: none;
-    color: white;
+    color: black;
+    animation: appear 1s linear;
     font-size: 18px;
     margin-left: 10px;
     margin-top: 10px;
     flex-direction: column;
 }
-.show-fts span{
+
+.show-fts span {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
 }
-.show-fts span a{
+
+.show-fts span a {
     color: #4895ef;
     text-decoration: none;
     padding-left: 10px;
 }
-.show-fts span img{
+
+.show-fts span img {
     height: 20px;
 }
-.projex{
+
+.projex {
     display: flex;
     justify-content: start;
     flex-direction: column;
 }
-.arrow-bottom{
-    height: 20px;
+
+.arrow-bottom {
+    height: 30px;
     cursor: pointer;
 }
-@keyframes show {
-    from{
-        opacity:0;
-        bottom: 30px;
-        
-    }
-    to{
-        opacity: 1;
-        bottom: 0;
-    }
-}
-@keyframes border {
-    from{
-        border-right: 1px solid #4895ef;
-    }to{
-        border: 0;
-    }
-}
-@keyframes typing {
-    from{
-        width: 0;
-    }
-    to{
-        width: 442px;
-    }
-}
-@keyframes typing-sm {
-    from{
-        width: 0;
-    }
-    to{
-        width: 250px;
-    }
-}
-@keyframes move {
-    from{
-        transform: translateY(-10px);
-    }50%{
-        transform: translateY(10px);
-    }to{
-        transform: translateY(-10px);
-    }
-}
+
 @media screen and (max-width:600px) {
-    .title{
+    .title {
         font-size: 18px !important;
         animation: typing-sm 2s steps(50);
-        
+
     }
-    .big-content span{
+
+    .big-content span {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .subtitle{
+
+    .subtitle {
         font-size: 15px !important;
-        text-align:center;
+        text-align: center;
         letter-spacing: 0px !important;
     }
-    .smallcont{
+
+    .smallcont {
         padding-left: 4px;
         flex-direction: column;
         align-items: center;
-        
+
     }
-    .link-github ,.gmail-link,.face-link{
+
+    .link-github,
+    .gmail-link,
+    .face-link {
         font-size: 15px;
     }
-    #root-section{
+
+    #root-section {
         margin-right: 0 !important;
     }
-    .content-root{
+
+    .content-root {
         height: auto;
     }
-    .about{
+
+    .about {
         font-size: 24px;
     }
-    .coding-section{
+
+    .coding-section {
         flex-direction: column-reverse;
         align-items: flex-start;
     }
-    .coding{
+
+    .coding {
         height: 200px;
         width: 200px;
     }
-    .projects{
+
+    .projects {
         width: 100%;
     }
-    .projects li{
+
+    .projects li {
         font-size: 14px;
         margin-top: -10px;
     }
-    .show-fts{
+
+    .show-fts {
         font-size: 10px;
         margin-bottom: 10px;
     }
-    .more{
+
+    .more {
         width: 20px;
     }
-    .span-column,.span-column2{
+
+    .span-column,
+    .span-column2 {
         flex-direction: column-reverse !important;
     }
-    .typo{
+
+    .typo {
         font-size: 18px;
     }
-    .lang{
+
+    .lang {
         font-size: 24px !important;
     }
-    .desc{
+
+    .desc {
         font-size: 12px !important;
     }
-    .arrow-bottom{
+
+    .arrow-bottom {
         margin-top: 20px;
     }
-    .img-cont0{
+
+    .img-cont0 {
         width: 100%;
         display: flex;
         justify-content: center;
     }
-    
+
 }
-.span-column2{
+
+.span-column2 {
     display: flex;
     flex-direction: row;
-    
+
     flex-grow: 1;
     font-size: 22px;
 }
-.langs{
+
+.langs {
     display: flex;
 
     flex-direction: column;
     flex-grow: 1;
 }
-.lang{
+
+.lang {
     font-size: 30px;
     color: #b5179e;
     margin-bottom: 10px;
 }
-.desc{
+
+.desc {
     font-size: 18px;
     padding-left: 20px;
     margin-bottom: 6px;
     color: #4895ef;
     margin-top: 6px;
+    inline-size: 30vh;
 }
-::-webkit-scrollbar{
+
+.desc.anim,
+.lang.anim,
+.typo.anim,
+.project.anim {
+    animation: appear 2s linear;
+
+}
+
+::-webkit-scrollbar {
     width: 5px;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+
+    }
+}
+
+@keyframes border {
+    from {
+        border-right: 1px solid #4895ef;
+    }
+
+    to {
+        border: 0;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 442px;
+    }
+}
+
+@keyframes typing-sm {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 250px;
+    }
+}
+
+@keyframes move {
+    from {
+        transform: translateY(-10px);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    to {
+        transform: translateY(-10px);
+    }
 }
