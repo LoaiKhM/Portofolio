@@ -106,45 +106,81 @@
         <div class="arrow-cont" id="projex-section" data-get="3">
         </div>
     </div>
+    <p class="about">Programming Languages</p>
+    <div class="lang" id="lang">
+        <span style="    display: flex;
+        flex-grow: 1;
+        align-items: center;padding-left:15px;height: auto;" class="span-column2">
+        <span class="langs">
+            <p class="lang">1. HTML & CSS & JS & MongoDB</p>
+            <p class="desc">Design A Perfect Website From Front-end To Back-end.</p>
+            <p class="desc">Have 3 Years Experience In Developing Websites.</p>
+
+            <p class="lang">2. Python</p>
+            <p class="desc">Developing Windows Tools.</p>
+            <p class="desc">2 Years Experience.</p>
+            <p class="lang">3. Java & Kotlin.</p>
+            <p class="desc">Developing Android Apps With The Best Performance.</p>
+            <p class="desc">8 Months Experience.</p>
+
+            <p class="lang">4. C++</p>
+            <p class="desc">Developing Basics Console Applications For Windows System.</p>
+            <p class="desc">4 Months Experience.</p>
+
+        </span>
+            <img src="./assists/pro.png" class="coding">
+        </span>
+        <div class="arrow-cont" id="lang-section" data-get="4">
+
+        </div>
+    </div>
 
 </body>
 <script>
+    let done = false
     $(document).on('click', '.project', function () {
         const index = $(this).data('index')
+
         $(`.show-fts`).css('display', 'none')
 
 
         $(`[data-index=${index}]`).css('display', 'flex')
+        if(done == false){
+            $('body').scrollTop($('body').scrollTop() + 55)
+            done = true
+        }
+        
     })
     let get = null;
     if (window.innerWidth >= 601) {
         $(document).ready(function () {
             $(document).on('click', '#arrow', function () {
                 get = $(this).closest('div').data('get')
-                if ($(this).parent().attr('id') !== 'about-section' && $(this).parent().attr('id') !== 'projex-section') {
+                if ($(this).parent().attr('id') !== 'projex-section' && $(this).parent().attr('id') !== 'lang-section') {
 
 
 
                     const scroll = $('body').scrollTop()
 
                     $('html, body').animate({
-                        scrollTop: scroll + 500
+                        scrollTop: scroll + 600
                     }, 1000);
                     $(this).parent().css('display', 'none')
                     $(`[data-get=${get + 1}]`).append(`<img src="./assists/ba-2.png" class="arrow-bottom" id="arrow">`)
                     $(`[data-get=${get + 1}]`).css(`display`, `flex`)
 
-                } else if ($(this).parent().attr('id') == 'about-section') {
+                } else if ($(this).parent().attr('id') == 'projex-section') {
+
+                    $(this).parent().css('display', 'none')
+                    $('[data-get=4]').append(`<img src="./assists/ba-1.png" class="arrow-bottom" id="arrow"  style="margin-bottom:10px;">`)
+                    $('[data-get=4]').css('display', 'flex')
                     const scroll = $(document).height()
                     $('html, body').animate({
                         scrollTop: scroll - $('#hero').height()
                     }, 1000);
-                    $(this).parent().css('display', 'none')
-                    $('[data-get=3]').append(`<img src="./assists/ba-1.png" class="arrow-bottom" id="arrow"  style="margin-bottom:10px;">`)
-                    $('[data-get=3]').css('display', 'flex')
 
 
-                } else if ($(this).parent().attr('id') == 'projex-section') {
+                } else if ($(this).parent().attr('id') == 'lang-section') {
                     $('html, body').animate({
                         scrollTop: 0
                     }, 1000);
@@ -164,43 +200,42 @@
         $(document).ready(function () {
             $(document).on('click', '#arrow', function () {
                 get = $(this).closest('div').data('get')
-                if ($(this).parent().attr('id') !== 'about-section' && $(this).parent().attr('id') !== 'projex-section') {
+                if ($(this).parent().attr('id') !== 'projex-section' && $(this).parent().attr('id') !== 'lang-section') {
 
 
 
                     const scroll = $('body').scrollTop()
 
                     $('html, body').animate({
-                        scrollTop: scroll + 430
+                        scrollTop: scroll + 440
                     }, 1000);
                     $(this).parent().css('display', 'none')
                     $(`[data-get=${get + 1}]`).append(`<img src="./assists/ba-2.png" class="arrow-bottom" id="arrow">`)
                     $(`[data-get=${get + 1}]`).css(`display`, `flex`)
 
-                } else if ($(this).parent().attr('id') == 'about-section') {
+                } else if ($(this).parent().attr('id') == 'projex-section') {
+
+                    $(this).parent().css('display', 'none')
+                    $('[data-get=4]').append(`<img src="./assists/ba-1.png" class="arrow-bottom" id="arrow"  style="margin-bottom:10px;">`)
+                    $('[data-get=4]').css('display', 'flex')
                     const scroll = $(document).height()
                     $('html, body').animate({
                         scrollTop: scroll - $('#hero').height()
                     }, 1000);
-                    $(this).parent().css('display', 'none')
-                    $('[data-get=3]').append(`<img src="./assists/ba-1.png" class="arrow-bottom" id="arrow" style="margin-bottom:10px;">`)
-                    $('[data-get=3]').css('display', 'flex')
 
 
-                } else if ($(this).parent().attr('id') == 'projex-section') {
+                } else if ($(this).parent().attr('id') == 'lang-section') {
                     $('html, body').animate({
                         scrollTop: 0
                     }, 1000);
                     $('.arrow-cont').css('display', 'none')
                     $('.arrow-bottom').remove()
                     $('[data-get=1]').css('display', 'flex')
-                    $('[data-get=1]').append(`<img src="./assists/ba-2.png" class="arrow-bottom" id="arrow" >`)
+                    $('[data-get=1]').append(`<img src="./assists/ba-2.png" class="arrow-bottom" id="arrow">`)
 
 
                 }
             })
-
-
         })
     }
 
