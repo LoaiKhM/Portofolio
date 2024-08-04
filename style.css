@@ -360,7 +360,7 @@ html {
 .lang.anim,
 .typo.anim,
 .project.anim {
-    animation: appear 2s linear;
+    animation: appear 1s linear;
 
 }
 

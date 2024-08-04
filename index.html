@@ -182,11 +182,13 @@
                             scrollTop: $('#proj')[0].offsetTop - $('#hero').innerHeight() + 22
                         })
                     }
+                    $('.typo').addClass('anim')
 
                 } else if (get == 2) {
                     $('body,html').animate({
                         scrollTop: $('#lang')[0].offsetTop - $('#hero').innerHeight()
                     })
+                    $('.project').addClass('anim')
                 }
                 $(this).parent().css('display', 'none')
 
