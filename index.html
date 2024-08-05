@@ -148,7 +148,7 @@
 
 </body>
 <script>
-    let done = false
+
     $(document).on('click', '.project', function () {
         const index = $(this).data('index')
 
@@ -156,10 +156,9 @@
 
 
         $(`[data-index=${index}]`).css('display', 'flex')
-        if (done == false) {
-            $('body').scrollTop($('#lang')[0].offsetTop - $('#hero').innerHeight())
-            done = true
-        }
+
+        $('body').scrollTop($('#lang')[0].offsetTop - $('#hero').innerHeight())
+
 
     })
     let get = null;
