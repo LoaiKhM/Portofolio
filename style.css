@@ -309,7 +309,7 @@ inline-size: 135vh;
 
     .typo {
         font-size: 14px;
-        inline-size: 41vh;
+        inline-size: fit-content;
     }
 
     .lang {
