@@ -77,12 +77,15 @@ html {
 .img-gmail {
     height: 24px;
     width: 24px;
+    object-fit: contain;
 }
 
 .img-face {
-    height: 20px;
-    width: 20px;
-    margin-left: 3px;
+    height: 30px;
+    width: 30px;
+    object-fit: contain;
+    position: relative;
+    left: -4px;
 }
 
 .hero h3 {
@@ -169,13 +172,15 @@ html {
 
 .typo {
 
-    margin-top: 15px;
+margin-top: 15px;
 
-    animation: show 2s linear;
+animation: show 2s linear;
 
-    position: relative;
+position: relative;
 
-    font-size: 30px;
+font-size: 30px;
+
+inline-size: 135vh;
 }
 
 .iam {
@@ -303,7 +308,8 @@ html {
     }
 
     .typo {
-        font-size: 18px;
+        font-size: 14px;
+        inline-size: 41vh;
     }
 
     .lang {
