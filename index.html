@@ -177,18 +177,18 @@
                     if (window.innerWidth >= 601) {
                         $('body,html').animate({
                             scrollTop: $('#proj')[0].offsetTop - $('#hero').innerHeight()
-                        })
+                        },2000)
                     }else{
                         $('body,html').animate({
                             scrollTop: $('#proj')[0].offsetTop - $('#hero').innerHeight() + 22
-                        })
+                        },2000)
                     }
                     $('.typo').addClass('anim')
 
                 } else if (get == 2) {
                     $('body,html').animate({
                         scrollTop: $('#lang')[0].offsetTop - $('#hero').innerHeight()
-                    })
+                    },2000)
                     $('.project').addClass('anim')
                 }
                 $(this).parent().css('display', 'none')
@@ -206,14 +206,14 @@
                 const scroll = $(document).height()
                 $('html, body').animate({
                     scrollTop: scroll - $('#hero').height()
-                }, 1000);
+                }, 2500);
 
 
             } else if ($(this).parent().attr('id') == 'lang-section') {
 
                 $('html, body').animate({
                     scrollTop: 0
-                }, 1000);
+                }, 2000);
                 $('.arrow-cont').css('display', 'none')
                 $('.arrow-bottom').remove()
                 $('[data-get=1]').css('display', 'flex')

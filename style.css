@@ -366,7 +366,7 @@ inline-size: 135vh;
 .lang.anim,
 .typo.anim,
 .project.anim {
-    animation: appear 1s linear;
+    animation: appear 3s linear;
 
 }
 
